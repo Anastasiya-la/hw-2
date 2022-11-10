@@ -21,6 +21,7 @@ const FriendMessage = (props: FriendMessagePropsType) => {
                     alt={'avatar'}
                     //
                 />
+                <div className={s.message_angle}></div>
                 <div className={s.friendText}>
                     <div
                         id={'hw1-friend-name-' + props.message.id}
@@ -38,16 +39,17 @@ const FriendMessage = (props: FriendMessagePropsType) => {
                         {props.message.message.text}
                         {/**/}
                     </pre>
+                    <div
+                        id={'hw1-friend-time-' + props.message.id}
+                        className={s.friendTime}
+                    >
+                        {/*создаёт студент*/}
+                        {props.message.message.time}
+                        {/**/}
+                    </div>
                 </div>
             </div>
-            <div
-                id={'hw1-friend-time-' + props.message.id}
-                className={s.friendTime}
-            >
-                {/*создаёт студент*/}
-                {props.message.message.time}
-                {/**/}
-            </div>
+
         </div>
     )
 }

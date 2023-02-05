@@ -2,19 +2,40 @@
 }
 
 .input {
+    box-sizing: border-box;
+    width: 250px;
+    height: 30px;
+    padding: 15px 10px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .inputWrapper {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .superInput {
+
 }
 
 .errorInput {
+    border: 1px solid red;
+    box-sizing: border-box;
+    width: 250px;
+    height: 30px;
+    padding: 15px 10px;
+    border-radius: 5px;
+    background-color: white;
 }
 
 .errorInput:focus {
+    outline: none;
+
 }
 
 .error {
+    margin-bottom: 10px;
+    color: red;
 }

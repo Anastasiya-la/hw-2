@@ -1,9 +1,13 @@
 .select {
+    width: 150px;
+    height: 25px;
 }
 
 .select:focus {
+    outline: none;
 }
 
 
 .option:hover {
+
 }

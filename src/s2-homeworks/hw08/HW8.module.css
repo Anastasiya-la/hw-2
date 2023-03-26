@@ -5,19 +5,38 @@
 }
 
 .users {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 .buttonsContainer {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .container {
+    max-width: 500px;
 }
 
 .thead {
+    width: 606px;
+    height: 36px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    background: #E5E5E5;
 }
 
+
+td{
+    border-bottom: 1px solid #dddddd;
+    padding: 16px;
+}
 .nameCol {
+    border-bottom: 1px solid #dddddd;
 }
 
 .ageCol {
+    border-bottom: 1px solid #dddddd;
 }
